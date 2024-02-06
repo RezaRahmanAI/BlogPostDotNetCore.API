@@ -3347,11 +3347,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Angular DotNet API\\CodePulse.API\\CodePulse.API\\CodePulse.API.csproj",
+      "projectUniqueName": "D:\\Angular DotNet API\\BlogPost-with-DotNet-Core-API-Angular\\API\\CodePulse.API\\CodePulse.API\\CodePulse.API.csproj",
       "projectName": "CodePulse.API",
-      "projectPath": "d:\\Angular DotNet API\\CodePulse.API\\CodePulse.API\\CodePulse.API.csproj",
+      "projectPath": "D:\\Angular DotNet API\\BlogPost-with-DotNet-Core-API-Angular\\API\\CodePulse.API\\CodePulse.API\\CodePulse.API.csproj",
       "packagesPath": "C:\\Users\\rizve\\.nuget\\packages\\",
-      "outputPath": "d:\\Angular DotNet API\\CodePulse.API\\CodePulse.API\\obj\\",
+      "outputPath": "D:\\Angular DotNet API\\BlogPost-with-DotNet-Core-API-Angular\\API\\CodePulse.API\\CodePulse.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rizve\\AppData\\Roaming\\NuGet\\NuGet.Config",
