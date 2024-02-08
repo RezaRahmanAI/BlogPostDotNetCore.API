@@ -84,7 +84,7 @@ namespace CodePulse.API.Controllers
             return Ok(response);
         }
 
-        // GET: https://localhost:7207/api/Categories/{id}
+        // PUT: https://localhost:7207/api/Categories/{id}
         [HttpPut]
         [Route("{id:Guid}")]
         public async Task<IActionResult> EditCategory([FromRoute] Guid id, UpdateCategoriesDTO request)
@@ -109,6 +109,25 @@ namespace CodePulse.API.Controllers
 
             return Ok(respons);
 
+        }
+
+        // Delete: https://localhost:7207/api/Categories/{id}
+        [HttpDelete]
+        [Route("{id:Guid}")]
+        public async Task<IActionResult> DeleteCategory([FromRoute] Guid id)
+        {
+            var category = await categoriesRepository.DeleteAsync(id);
+            if (category is null) { return NotFound(); }
+
+            // conver Domain to DTO
+            var response = new CategoryDTO
+            {
+                Id = category.Id,
+                Name = category.Name,
+                urlHandle = category.urlHandle,
+            };
+
+            return Ok(response);
         }
     }
 }
